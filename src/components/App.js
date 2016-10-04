@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Intro from './Intro';
 import Header from './Header';
 import Loading from './Loading';
 require('es6-promise').polyfill();
@@ -36,10 +35,6 @@ class App extends Component {
       <div className="App">
         {this.state.loading ? <Loading /> : <p>Finished Loading...</p>}
         <Header/>
-        <Intro
-          title="Welcome"
-          name="Henry"
-        />
       </div>
     );
   }

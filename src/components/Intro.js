@@ -12,9 +12,5 @@ const Intro = (props) => {
 }
 
 
-Intro.PropTypes = {
-  title: React.PropTypes.string,
-  name: React.PropTypes.string
-}
 
 export default Intro
