@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './Header';
-import Loading from './Loading';
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 
@@ -33,8 +31,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.loading ? <Loading /> : <p>Finished Loading...</p>}
-        <Header/>
+        Hello World!
+        {this.state.loading ? <p>Loading...</p> : <p>Finished loading!</p>}
       </div>
     );
   }
