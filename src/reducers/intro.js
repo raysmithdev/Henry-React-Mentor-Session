@@ -1,8 +1,9 @@
 const initialState = {
-  name: "Henry Acosta"
+  name: "Ray Smith",
+  bio: "Hey my name is Ray and I love to do React & Redux :)"
 }
 
-const user = (state = initialState, action) => {
+const intro = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_TODO':
       return {
@@ -15,4 +16,4 @@ const user = (state = initialState, action) => {
   }
 }
 
-export default user
+export default intro

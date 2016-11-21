@@ -1,10 +1,14 @@
 import React from 'react'
 import './App.css'
 import { Button } from 'react-bootstrap'
+import IntroContainer from '../containers/IntroContainer'
 
 const AppView = ({ x }) => {
   return (
-    <Button bsStyle="primary">{x}</Button>
+    <div>
+      <IntroContainer />
+      <Button bsStyle="primary">{x}</Button>
+    </div>
   )
 }
 
