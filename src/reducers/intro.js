@@ -5,12 +5,10 @@ const initialState = {
 
 const intro = (state = initialState, action) => {
   switch (action.type) {
-    case 'ADD_TODO':
-      return {
-        id: action.id,
-        text: action.text,
-        completed: false
-      }
+    case 'CHANGE_USER_NAME':
+      return Object.assign({}, state, {
+        name: action.newName
+      })
     default:
       return state
   }

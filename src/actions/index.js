@@ -1,9 +1,6 @@
-let nextTodoId = 0
-
-export const addTodo = (text) => {
+export const changeUserName = (newName) => {
   return {
-    type: 'ADD_TODO',
-    id: nextTodoId++,
-    text
+    type: 'CHANGE_USER_NAME',
+    newName
   }
 }

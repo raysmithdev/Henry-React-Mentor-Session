@@ -3,14 +3,14 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import reducers from './reducers'
-import AppContainer from './containers/AppContainer'
+import AppView from './components/AppView'
 import './index.css'
 
 const store = createStore(reducers)
 
 render(
   <Provider store={store}>
-     <AppContainer />
+     <AppView />
   </Provider>,
   document.getElementById('root')
 )

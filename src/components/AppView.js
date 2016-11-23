@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
-import { Button } from 'react-bootstrap'
 import IntroContainer from '../containers/IntroContainer'
+import FormContainer from '../containers/FormContainer'
 
 const AppView = ({ x }) => {
   return (
     <div>
       <IntroContainer />
-      <Button bsStyle="primary">{x}</Button>
+      <FormContainer />
     </div>
   )
 }
