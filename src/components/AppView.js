@@ -1,13 +1,13 @@
 import React from 'react'
 import './App.css'
-import IntroContainer from '../containers/IntroContainer'
 import FormContainer from '../containers/FormContainer'
+import BeerListContainer from '../containers/BeerListContainer'
 
-const AppView = ({ x }) => {
+const AppView = () => {
   return (
     <div>
-      <IntroContainer />
       <FormContainer />
+      <BeerListContainer />
     </div>
   )
 }

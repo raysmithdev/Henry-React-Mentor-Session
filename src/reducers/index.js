@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
-import intro from './intro'
+import beers from './beers'
 
-const reducers = combineReducers({
-  intro
+const rootReducer = combineReducers({
+  beers
 })
 
-export default reducers
+export default rootReducer
